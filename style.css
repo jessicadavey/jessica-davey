@@ -11,9 +11,21 @@
 body {
   background: var(--main-bg-color);
   color: var(--text-color);
+  font-family: var(--body-font), serif;
+  text-align: justify;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
 }
 
 .title-text {
+  color: var(--text-color);
   font-family: var(--header-font), cursive;
   font-size: 18vw;
   font-weight: normal;
@@ -28,4 +40,64 @@ body {
   z-index: -1;
 }
 
-/* font-family: 'Josefin Slab', serif; */
+.button {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  border-style: solid;
+  border-width: 2px;
+  width: 30vw;
+  height: 10vw;
+  margin: 10px 10% 10px auto;
+}
+
+.button-link {
+  font-family: var(--body-font), serif;
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.nav-bar {
+  font-family: var(--header-font), cursive;
+  list-style-type: none;
+  margin: 15% 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline;
+  padding: 10px;
+}
+
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 6vw;
+  color: var(--text-color);
+}
+
+.subheader {
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 11vw;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+}
+
+.body-text {
+  font-size: 5vw;
+
+  padding: 5px;
+}
+
+footer {
+  color: var(--text-color);
+}
