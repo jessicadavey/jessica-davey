@@ -8,11 +8,14 @@
   --header-font: "Sacramento";
   --body-font: "Josefin Slab";
 }
+
+html {
+  font-size: 16px;
+}
 body {
   background: var(--main-bg-color);
   color: var(--text-color);
   font-family: var(--body-font), serif;
-  text-align: justify;
 }
 
 a {
@@ -27,7 +30,7 @@ a:hover {
 .title-text {
   color: var(--text-color);
   font-family: var(--header-font), cursive;
-  font-size: 18vw;
+  font-size: 4rem;
   font-weight: normal;
   text-align: center;
   line-height: 0.2;
@@ -42,7 +45,6 @@ a:hover {
 
 .button {
   position: relative;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,42 +64,77 @@ a:hover {
   font-weight: bold;
   font-size: 3vw;
 }
-
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 .nav-bar {
   font-family: var(--header-font), cursive;
   list-style-type: none;
-  margin: 15% 0 0 0;
+  margin: 28% 0 0 0;
   padding: 0;
   text-align: center;
+  background: var(--main-bg-color);
+  z-index: 2;
 }
 
 .nav-bar li {
-  display: inline;
+  display: inline-block;
   padding: 10px;
 }
 
 .nav-bar a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  font-size: 6vw;
+  font-size: 8vw;
   color: var(--text-color);
+}
+
+.nav-bar a:hover {
+  color: var(--link-hover-color);
 }
 
 .subheader {
   font-family: var(--header-font);
   color: var(--text-color);
-  font-size: 11vw;
+  font-size: 3rem;
   font-weight: normal;
   text-align: center;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .body-text {
-  font-size: 5vw;
-
+  font-size: 1rem;
   padding: 5px;
+  text-align: justify;
 }
 
-footer {
+.album-cover {
+  display: block;
+  margin: 10px auto 40px auto;
+  max-width: 80%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--link-color);
+}
+
+.album-cover:hover {
+  /* opacity: 0.4; */
+  border-color: var(--link-hover-color);
+}
+
+.album-info {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.footer {
   color: var(--text-color);
+  font-size: 0.8rem;
 }
