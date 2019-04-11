@@ -21,6 +21,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -90,6 +91,7 @@ nav {
   text-decoration: none;
   font-size: 8vw;
   color: var(--text-color);
+  font-weight: normal;
 }
 
 .nav-bar a:hover {
@@ -131,7 +133,8 @@ nav {
   font-weight: bold;
 }
 
-.contact-text {
+.contact-text,
+.cv {
   text-align: center;
 }
 
