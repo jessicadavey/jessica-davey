@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento");
 
 :root {
-  --main-bg-color: #564e4b;
+  --main-bg-color: #201d1d;
   --text-color: #f5f5f5;
   --link-color: #3891a6;
   --link-hover-color: #fb3640;
@@ -26,6 +26,7 @@ a {
 
 a:hover {
   color: var(--link-hover-color);
+  text-decoration: underline;
 }
 
 .title-text {
@@ -96,6 +97,7 @@ nav {
 
 .nav-bar a:hover {
   color: var(--link-hover-color);
+  text-decoration: underline;
 }
 
 .subheader {
