@@ -57,6 +57,10 @@ a:hover {
   margin: 10px 10% 10px auto;
 }
 
+.button:hover {
+  color: var(--link-hover-color);
+}
+
 .button a {
   font-family: var(--body-font), serif;
   color: var(--text-color);
@@ -68,6 +72,9 @@ a:hover {
   line-height: 3.2;
   width: 30vw;
   height: 10vw;
+}
+.button a:hover {
+  color: var(--link-hover-color);
 }
 
 nav {
