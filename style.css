@@ -120,15 +120,15 @@ nav {
 }
 
 .album-cover {
-  display: block;
+  width: 250px;
+  margin: auto;
   margin: 10px auto 40px auto;
-  max-width: 80%;
-  border-style: solid;
-  border-width: 10px;
-  border-color: var(--link-color);
+}
+.album-cover img {
+  border: 10px solid var(--link-color);
 }
 
-.album-cover:hover {
+.album-cover img:hover {
   /* opacity: 0.4; */
   border-color: var(--link-hover-color);
 }
