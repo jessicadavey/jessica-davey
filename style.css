@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento");
-
 :root {
   --main-bg-color: #201d1d;
   --text-color: #f5f5f5;
@@ -43,7 +41,7 @@ a:hover {
   left: 0px;
   top: 0px;
   z-index: -1;
-  width: 100%;
+  width: 105%;
 }
 
 .button {
@@ -73,6 +71,7 @@ a:hover {
   width: 30vw;
   height: 10vw;
 }
+
 .button a:hover {
   color: var(--link-hover-color);
 }
@@ -85,7 +84,7 @@ nav {
 .nav-bar {
   font-family: var(--header-font), cursive;
   list-style-type: none;
-  margin: 28% 0 0 0;
+  margin: 28% -5% 0 -5%;
   padding: 0;
   text-align: center;
   background: var(--main-bg-color);
@@ -120,10 +119,9 @@ nav {
   margin-bottom: 0;
 }
 
-.body-text {
-  font-size: 1rem;
-  padding: 5px;
-  text-align: justify;
+.albums {
+  display: flex;
+  flex-direction: column;
 }
 
 .album-cover {
@@ -145,6 +143,12 @@ nav {
   font-weight: bold;
 }
 
+.body-text {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: justify;
+}
+
 .contact-text,
 .cv {
   text-align: center;
@@ -153,4 +157,59 @@ nav {
 .footer {
   color: var(--text-color);
   font-size: 0.8rem;
+  line-height: 1.3;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 755px) {
+  .title-text {
+    font-size: 15vw;
+  }
+
+  .button {
+    width: 21vw;
+    height: 7vw;
+  }
+
+  .button a {
+    font-size: 2.5vw;
+  }
+
+  .body-text {
+    max-width: 70%;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+
+  .subheader {
+    font-size: 4rem;
+  }
+
+  .albums {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .album {
+    padding: 20px;
+  }
+
+  .album-info {
+    font-size: 1.4rem;
+  }
+
+  .cv,
+  .contact-text {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+    max-width: 70%;
+    margin: auto;
+  }
 }
